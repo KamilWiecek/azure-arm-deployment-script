@@ -1,0 +1,31 @@
+[
+    {
+        "Order": 1,
+        "Template": "ManagementGroup.json",
+        "TemplateParameterFile": "ManagementGroup.Root.Parameters.json",
+        "TenantId": "11111111-1111-1111-1111-111111111111"
+    },
+    {
+        "Order": 2,
+        "Template": "RoleAssignment.json",
+        "TemplateParameterFile": "RoleAssignment.Soc.Parameters.json",
+        "TenantId": "11111111-1111-1111-1111-111111111111",
+        "ManagementGroupId": "11111111-1111-1111-1111-111111111111"
+    },
+    {
+        "Order": 3,
+        "Template": "ResourceGroups.json",
+        "TemplateParameterFile": "ResourceGroups.Parameters.json",
+        "TenantId": "11111111-1111-1111-1111-111111111111",
+        "SubscriptionId": "22222222-2222-2222-2222-222222222222",
+    }, 
+    {
+        "Order": 4,
+        "Template": "PublicIp.json",
+        "TemplateParameterFile": "PublicIp.Vgw.Parameters.json",
+        "TenantId": "11111111-1111-1111-1111-111111111111",
+        "SubscriptionId": "22222222-2222-2222-2222-222222222222",
+        "RgName": "rg-publicips-westeurope-001",
+        "Mode": "Incremental"
+    }
+]
